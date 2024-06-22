@@ -44,12 +44,12 @@ First install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then ty
  - Profiles:
 	 - Keys > Key mappings > *Natural Text Editing* (Presets dropdown, then remove all existing keymaps when asked)
 	 - General > *reuse previous session's directory*
-	 - Text > Font > *Anonymous Pro* (must be installed)
+	 - Text > Font > *Anonymous Pro* (must be installed, see linked file)
 Then install this color scheme. (to link or to file)
 
-Setup your GitHub SSH Key on your profile, you can follow this tutorial : [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac). This facilitates git commands to GitHub
+Setup your GitHub SSH Key on your profile, you can follow this tutorial : [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac). This facilitates git commands to GitHub.
 
-Install [oh-my-zsh](https://ohmyz.sh/). Use the config (link) script to enable the settings, or copy the contents of the .zshrc ans other config files to you own config. (link to files) https://github.com/w3cj/dotfiles
+Install [oh-my-zsh](https://ohmyz.sh/). Use the config (link) script to install the settings with all other dotfiles, or copy the contents of the .zshrc and other config files to you own config. (link to files) https://github.com/w3cj/dotfiles
 
 Install [nvm](https://github.com/nvm-sh/nvm). Then proceed with the download of the latest Node version.
 
