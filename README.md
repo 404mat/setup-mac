@@ -40,7 +40,9 @@ First install [Homebrew](https://brew.sh/) :
 Here are a few usefull **taps** I recommend :
 
 ## Terminal
-First install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then type in these settings :
+You can start by installing all the config files (dotfiles) using the instllation script [the installation script](dotfiles/install_dotfiles.sh).
+
+Install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then type in these settings :
  - Profiles:
 	 - Keys > Key mappings > *Natural Text Editing* (Presets dropdown, then remove all existing keymaps when asked)
 	 - General > *reuse previous session's directory*
@@ -54,7 +56,7 @@ Install [oh-my-zsh](https://ohmyz.sh/). Use the config (link) script to install 
 Install [nvm](https://github.com/nvm-sh/nvm). Then proceed with the download of the latest Node version.
 
 ## Development
-Install Visual Studio Code. You can do it from Brew. Then, use [this link](https://github.com/404mat/setup-vscode) to setup VSCode the way I would do it.
+Install Visual Studio Code. You can do it from Brew. Then, use [these settings](https://github.com/404mat/setup-vscode) to setup VSCode the way I would do it.
 
 Create a ***dev*** folder in the home directory. This is where all projects will live.
 
