@@ -24,12 +24,28 @@ This is the way I setup all Mac computers when I do a fresh install. Feel free t
 	 - To disable the accents menu on key long press : `defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"`
 	 
 ## Raycast
-Hotkeys to open apps with ⌥ + first letter of app
+You can configure hotkeys to open apps with ⌥ + first letter of app. These are the one I use: Notion, Arc, Visual Studio Code (C), Discord and Spotify.
 
- - Plugins :
-	 - Brew
-	 - 
-For a quick install of al lthese settings, you can use this settings file config. (link to file)
+- Plugins :
+	- Utilities
+		- Brew
+		- Google Translate
+		- Notion
+		- Color Picker
+	 	- Spotify Player
+		- System Monitor
+		- Bitwarden Vault
+		- Emoji Search
+	- Browsers
+		- Chrome
+		- Arc
+		- Google Search
+	- Development
+		- Visual Studio Code
+		- Tailwind CSS
+		- Search npm packages
+
+For a quick install of all these settings, you can use [this settings file] as your configuration and import it il Raycast via the UI.
 
 ## Homebrew
 
