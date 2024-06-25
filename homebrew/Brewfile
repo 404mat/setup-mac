@@ -1,0 +1,11 @@
+# to be done
+
+brew "git"
+brew "pyenv"
+brew "archey"
+brew "thefuck"
+brew "mackup"
+
+
+tap "homebrew/cask" # verifier
+tap "homebrew/cask-font" # verifier

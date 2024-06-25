@@ -22,7 +22,17 @@ This is the way I setup all Mac computers when I do a fresh install. Feel free t
 	 - So that the dock stops doing the goofy windows animations :  `defaults write com.apple.dock "mineffect" -string "scale" && killall Dock`
 	 - Scroll to Exposé on an app in the dock : `defaults write com.apple.dock "scroll-to-open" -bool "true" && killall Dock`
 	 - To disable the accents menu on key long press : `defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"`
-	 
+
+## Homebrew
+
+First install [Homebrew](https://brew.sh/) : 
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+You can then install this GUI called [Cork](https://github.com/buresdv/Cork) if you want.
+
+Use this [Brewfile](homebrew/Brewfile) to install all the recommended programs. Or use the script to run the brew command
+
 ## Raycast
 You can configure hotkeys to open apps with ⌥ + first letter of app. These are the one I use: Notion, Arc, Visual Studio Code (C), Discord and Spotify.
 
@@ -46,14 +56,6 @@ You can configure hotkeys to open apps with ⌥ + first letter of app. These are
 		- Search npm packages
 
 For a quick install of all these settings, you can use [this settings file](raycast/.rayconfig) as your configuration and import it il Raycast via the UI.
-
-## Homebrew
-
-First install [Homebrew](https://brew.sh/) : 
-
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-Here are a few usefull **taps** I recommend :
 
 ## Terminal
 You can start by installing all the config files (dotfiles) using the instllation script [the installation script](dotfiles/install_dotfiles.sh).
