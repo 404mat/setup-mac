@@ -1,11 +1,23 @@
-# to be done
-
+# to be completed
 brew "git"
 brew "pyenv"
 brew "archey"
 brew "thefuck"
 brew "mackup"
+brew "python"
+brew "mailsy"
+brew "imagemagick"
 
-
-tap "homebrew/cask" # verifier
-tap "homebrew/cask-font" # verifier
+cask "qlcolorcode"
+cask "qlstephen"
+cask "qlmarkdown"
+cask "quicklook-json"
+cask "qlprettypatch"
+cask "quicklook-csv"
+cask "webpquicklook"
+cask "suspicious-package"
+cask "iina"
+cask "betterzip"
+cask "appcleaner"
+cask "superduper"
+cask "qbittorrent@lt20"

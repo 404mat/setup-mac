@@ -1,5 +1,10 @@
 # MacOS : Setup
 This is the way I setup all Mac computers when I do a fresh install. Feel free to follow along and take what you like from it.
+
+You can start by installing all the config files (dotfiles) using [the installation script](dotfiles/install_dotfiles.sh).
+
+In the mean time, install ***Xcode*** from the App Store, as it is the signgle thing that will take the most time.
+
 ## Things to do while other stuff installs
 
  - Settings :
@@ -25,15 +30,17 @@ This is the way I setup all Mac computers when I do a fresh install. Feel free t
 
 ## Homebrew
 
-First install [Homebrew](https://brew.sh/) : 
+Install [Homebrew](https://brew.sh/) : 
 
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
 
 You can then install this GUI called [Cork](https://github.com/buresdv/Cork) if you want.
 
-Use this [Brewfile](homebrew/Brewfile) to install all the recommended programs. Or use the script to run the brew command
+Use this [Brewfile](homebrew/Brewfile) to install all the recommended programs. Or use the associated script to install it automatically.
 
 ## Raycast
+Make sure Raycast is installed. (If you installed all the brew utilities, then it may already be on your computer at this point).
+
 You can configure hotkeys to open apps with ⌥ + first letter of app. These are the one I use: Notion, Arc, Visual Studio Code (C), Discord and Spotify.
 
 - Plugins :
@@ -58,7 +65,6 @@ You can configure hotkeys to open apps with ⌥ + first letter of app. These are
 For a quick install of all these settings, you can use [this settings file](raycast/.rayconfig) as your configuration and import it il Raycast via the UI.
 
 ## Terminal
-You can start by installing all the config files (dotfiles) using the instllation script [the installation script](dotfiles/install_dotfiles.sh).
 
 Install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then type in these settings :
  - Profiles:
@@ -77,6 +83,12 @@ Install [nvm](https://github.com/nvm-sh/nvm). Then proceed with the download of 
 Install Visual Studio Code. You can do it from Brew. Then, use [these settings](https://github.com/404mat/setup-vscode) to setup VSCode the way I would do it.
 
 Create a ***dev*** folder in the home directory. This is where all projects will live.
+
+Launch visual studio code, type ⌘ + ⇧ + P to open the command palette, then type ``Install 'code' command in PATH``. This will allow you to open a diretori directly from the terminal using the ``code`` command.
+
+Use Homebrew to install your favorite flavor of OpenJDK.
+
+You can also install Docker Desktop for Mac directly from [the official website](https://www.docker.com/products/docker-desktop/).
 
 ## Finder
  - Advanced :
@@ -102,21 +114,22 @@ Spotify
 VLC (or alternative)
 
 ## Utilities
-[Loop](https://github.com/MrKai77/Loop)
-Hidden Bar
-Time since login in menuabr
-Linear mouse
-App Cleaner
-amphetamine
-Latest
-Dropzone 4
-AltTab (swap ⌘Tab with Alt+Tab)
-Stats
-Itsycal
+- [Loop](https://github.com/MrKai77/Loop)
+- Hidden Bar
+- Time since login in menubar (find it)
+- Linear mouse
+- App Cleaner
+- Amphetamine
+- Latest
+- Dropzone 4
+- AltTab (swap ⌘Tab with Alt+Tab afterwards in settings)
+- Stats
+- Itsycal
 
 ## Appearence
-Icons : https://macosicons.com/#/ make an icon pack
-
+I personnally prefer to use a somewhat coherent theme when I use my apps. You can find a few sets of these in the [icons folder](icons).
 
 ## References
 https://macos-defaults.com/
+
+https://macosicons.com/#/
