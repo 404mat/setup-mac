@@ -45,7 +45,7 @@ You can configure hotkeys to open apps with ⌥ + first letter of app. These are
 		- Tailwind CSS
 		- Search npm packages
 
-For a quick install of all these settings, you can use [this settings file] as your configuration and import it il Raycast via the UI.
+For a quick install of all these settings, you can use [this settings file](raycast/.rayconfig) as your configuration and import it il Raycast via the UI.
 
 ## Homebrew
 
