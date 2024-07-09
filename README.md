@@ -5,7 +5,9 @@ You can start by installing all the config files (dotfiles) using [the installat
 
 In the mean time, install ***Xcode*** from the App Store, as it is the signgle thing that will take the most time.
 
-## Things to do while other stuff installs
+## Dock and Finder
+
+You can use the [configure_dock_finder.sh](utilities/configure_dock.sh) script to easily set up your Dock and Finder settings. Here are other settings you can input manually :
 
  - Settings :
 	 - General :
@@ -13,20 +15,14 @@ In the mean time, install ***Xcode*** from the App Store, as it is the signgle t
 	 - Desktop & Dock :
 		 - Click wallpaper to reveal desktop > *Only in Stage Manager*
 		 - Double click a window's title bar to > *Minimize*
-		 - Show items > off *(no icons on desktop)*
 		 - Hot corners > *⌘ Desktop* in bottom left
-		 - Group windows by application > on *(windows grouped in Mission Control)*
-		 - Show suggested and recent apps in Dock > off
-		 - Position on screen > *right* or *left*
-		 - Automatically hide and show the Dock > on
 	 - Notifications : disable all you can
- - Clear dock of unwanted apps and make it smaller by dragging
- - Utility terminal commands:
-	 - So that the delay needed fot the dock to start unhiding is reduced : `defaults write com.apple.dock autohide-delay -float 0; killall Dock` 
-	 - So that the dock unhiding animation in reduced : `defaults write com.apple.dock autohide-time-modifier -float 0.15; killall Dock`
-	 - So that the dock stops doing the goofy windows animations :  `defaults write com.apple.dock "mineffect" -string "scale" && killall Dock`
-	 - Scroll to Exposé on an app in the dock : `defaults write com.apple.dock "scroll-to-open" -bool "true" && killall Dock`
-	 - To disable the accents menu on key long press : `defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"`
+ - Clear dock of unwanted apps
+ - General :
+	 - New Fidner window show > select root folder
+	 - Open folders in tabs instead of new window > on
+ - Remove unused items from sidebar
+- Rightclick > activate snap to grid
 
 ## Homebrew
 
@@ -70,7 +66,7 @@ Install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then type in 
  - Profiles:
 	 - Keys > Key mappings > *Natural Text Editing* (Presets dropdown, then remove all existing keymaps when asked)
 	 - General > *reuse previous session's directory*
-	 - Text > Font > *Anonymous Pro* (must be installed, see linked file)
+	 - Text > Font > *Anonymous Pro* (must be installed, see [the install script](fonts/install_fonts.sh))
 Then install this color scheme. (to link or to file)
 
 Setup your GitHub SSH Key on your profile, you can follow this tutorial : [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac). This facilitates git commands to GitHub.
@@ -90,44 +86,24 @@ Use Homebrew to install your favorite flavor of OpenJDK.
 
 You can also install Docker Desktop for Mac directly from [the official website](https://www.docker.com/products/docker-desktop/).
 
-## Finder
- - Advanced :
-	 - When performing a search > *Search the current folder*
-	 - Show all filename extensions > on
-	 - Show warning before changing extension > off
- - General :
-	 - New Fidner window show > select root folder
-	 - Open folders in tabs instead of new window > on
- - Remove unused items from sidebar
-- Rightclick > activate snap to grid
-- ⌥ + ⌘ + P to activate the breadcrumbs on the bottom
-- Keep folders at the top when sorting : `defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true" && killall Finder`
-- Default to home directory when saving a document instead of iCloud : `defaults write NSGlobalDomain "NSDocumentSaveNewDocumentsToCloud" -bool "false"`
-- Icons at the top of title bar : `defaults write com.apple.universalaccess "showWindowTitlebarIcons" -bool "true" && killall Finder`
-
 
 ## General use apps
-Arc
-Bitwarden
-Discord
-Spotify
-VLC (or alternative)
+- Arc
+- Bitwarden
+- Discord
+- Spotify
+- VLC (backup for iina)
 
 ## Utilities
+Here are a few utilities that cannot yet be installed via brew. All the others are already installed when using the [Brewfile](homebrew/Brewfile).
 - [Loop](https://github.com/MrKai77/Loop)
-- Hidden Bar
-- Time since login in menubar (find it)
 - Linear mouse
-- App Cleaner
 - Amphetamine
-- Latest
-- Dropzone 4
-- AltTab (swap ⌘Tab with Alt+Tab afterwards in settings)
-- Stats
-- Itsycal
+- AltTab (in the brewfile, but you need to swap ⌘Tab with Alt+Tab afterwards in settings)
+- [BatFi](https://micropixels.software/apps/batfi)
 
 ## Appearence
-I personnally prefer to use a somewhat coherent theme when I use my apps. You can find a few sets of these in the [icons folder](icons).
+I personnally prefer to use a somewhat coherent theme when I use my apps. You can find a few sets of these in the [icons folder](icons). You can change the icon of a designated app by going into it's info (⌘ + I), and dragging the new icon on the old icon in the window that appears.
 
 ## References
 https://macos-defaults.com/
