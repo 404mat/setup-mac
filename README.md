@@ -62,7 +62,7 @@ For a quick install of all these settings, you can use [this settings file](rayc
 
 ## Terminal
 
-Install [iTerm2](https://iterm2.com/) (using brew is recommanded). Then type in these settings :
+Install [iTerm2](https://iterm2.com/) (using brew is recommanded, this program is in the Brewfile). Then type in these settings :
  - Profiles:
 	 - Keys > Key mappings > *Natural Text Editing* (Presets dropdown, then remove all existing keymaps when asked)
 	 - General > *reuse previous session's directory*

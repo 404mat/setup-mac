@@ -1,34 +1,59 @@
-brew "git"
-brew "pyenv"
-brew "archey"
-brew "thefuck"
-brew "mackup"
-brew "python"
-brew "mailsy"
-brew "imagemagick"
-brew "fastfetch"
+# utils
+brew 'git'
+brew 'archey'
+brew 'thefuck'
+brew 'mackup'
+brew 'mailsy'
+brew 'imagemagick'
+brew 'fastfetch'
+brew 'tree'
+brew 'mas'
+brew 'ffmpeg'
 
-cask "raycast"
-cask "middleclick"
-cask "qlcolorcode"
-cask "qlstephen"
-cask "qlmarkdown"
-cask "quicklook-json"
-cask "qlprettypatch"
-cask "quicklook-csv"
-cask "webpquicklook"
-cask "suspicious-package"
-cask "iina"
-cask "betterzip"
-cask "appcleaner"
-cask "superduper"
-cask "qbittorrent@lt20"
-cask "radio-silence"
-cask "linearmouse"
-cask "mediamate"
-cask "swish"
-cask "hiddenbar"
-cask "dropzone"
-cask "alt-tab"
-cask "stats"
-cask "itsycal"
+cask 'qlcolorcode'
+cask 'qlstephen'
+cask 'qlmarkdown'
+cask 'quicklook-json'
+cask 'qlprettypatch'
+cask 'quicklook-csv'
+cask 'webpquicklook'
+cask 'suspicious-package'
+
+# dev tools
+brew 'zsh-completions'
+
+cask 'iterm2'
+cask 'visual-studio-code'
+cask 'docker'
+
+# environments
+brew 'pyenv'
+brew 'openjdk'
+
+# databases
+cask 'mongodb-compass'
+
+# browsers
+cask 'google-chrome'
+cask 'arc'
+
+# apps
+cask 'raycast'
+cask 'middleclick'
+cask 'iina'
+cask 'betterzip'
+cask 'appcleaner'
+cask 'superduper'
+cask 'qbittorrent@lt20'
+cask 'radio-silence'
+cask 'linearmouse'
+cask 'mediamate'
+cask 'swish'
+cask 'hiddenbar'
+cask 'dropzone'
+cask 'alt-tab'
+cask 'stats'
+cask 'itsycal'
+cask 'spotify'
+cask 'bitwarden'
+cask 'notion'
