@@ -29,6 +29,7 @@ cask 'docker'
 # environments
 brew 'pyenv'
 brew 'openjdk'
+brew 'node'
 
 # databases
 cask 'mongodb-compass'
@@ -57,3 +58,4 @@ cask 'itsycal'
 cask 'spotify'
 cask 'bitwarden'
 cask 'notion'
+cask 'iconchamp'
