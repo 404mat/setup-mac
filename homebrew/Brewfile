@@ -25,6 +25,7 @@ brew 'zsh-completions'
 cask 'iterm2'
 cask 'visual-studio-code'
 cask 'docker'
+cask 'psotman'
 
 # environments
 brew 'pyenv'
@@ -37,6 +38,9 @@ cask 'mongodb-compass'
 # browsers
 cask 'google-chrome'
 cask 'arc'
+
+# design
+cask 'figma'
 
 # apps
 cask 'raycast'
@@ -59,3 +63,5 @@ cask 'spotify'
 cask 'bitwarden'
 cask 'notion'
 cask 'iconchamp'
+cask 'google-drive'
+cask 'chatmate-for-whatsapp'
