@@ -9,6 +9,7 @@ brew 'fastfetch'
 brew 'tree'
 brew 'mas'
 brew 'ffmpeg'
+brew 'asitop'
 
 cask 'qlcolorcode'
 cask 'qlstephen'
