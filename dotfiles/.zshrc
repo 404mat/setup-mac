@@ -3,8 +3,6 @@ export HISTFILESIZE=10000
 export HISTSIZE=500
 # Don't put duplicate lines in the history
 export HISTCONTROL=erasedups:ignoredups
-# Causes bash to append to history instead of overwriting it so if you start a new terminal, you have old session history
-shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 # ----------------------
@@ -12,7 +10,7 @@ PROMPT_COMMAND='history -a'
 # ----------------------
 # To temporarily bypass an alias, we preceed the command with a \
 # EG: the ls command is aliased, but to use the normal ls command you would type \ls
-alias l="lh" # List files in current directory
+alias l="ls -lh" # List files in current directory
 alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder/Explorer
 alias cls='clear' # Clear screen

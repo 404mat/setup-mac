@@ -12,7 +12,7 @@ You can then install the Xcode ***app*** from the App Store, it will take a lot 
 
 ## Dock and Finder
 
-You can use the [configure_dock_finder.sh](utilities/configure_dock.sh) script to easily set up your Dock and Finder settings. Here are other settings you can input manually :
+You can use the [configure_dock_finder.sh](utilities/configure_dock_finder.sh) script to easily set up your Dock and Finder settings. Here are other settings you can input manually :
 
  - Settings :
 	 - General :
@@ -20,7 +20,7 @@ You can use the [configure_dock_finder.sh](utilities/configure_dock.sh) script t
 	 - Desktop & Dock :
 		 - Click wallpaper to reveal desktop > *Only in Stage Manager*
 		 - Double click a window's title bar to > *Minimize*
-		 - Hot corners > *⌘ Desktop* in bottom left
+		 - Hot corners > *⌘ Desktop* in bottom right (Windows-like)
 	 - Notifications : disable all you can
  - Clear dock of unwanted apps
  - General :
@@ -33,7 +33,6 @@ You can use the [configure_dock_finder.sh](utilities/configure_dock.sh) script t
 
 Install [Homebrew](https://brew.sh/) : ``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"``
 
-You can then install this GUI called [Cork](https://github.com/buresdv/Cork) if you want. It is used to graphically manage Homebrew packages on you Mac.  
 Use this [Brewfile](homebrew/Brewfile) to install all the recommended programs. Or use the [associated script](homebrew/install_brewfile.sh) to install it automatically.
 
 ## Raycast
@@ -93,10 +92,10 @@ You can also install *Docker Desktop* for Mac directly from [the official websit
 
 
 ## General use apps
-- Arc
-- Bitwarden
+- Dropzone 4
 - Discord
-- Spotify
+- Swish
+- Mediamate
 - VLC (backup for iina)
 
 ## Utilities

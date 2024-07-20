@@ -3,7 +3,8 @@
 	name = 404mat
 [credential]
 	helper = manager
-[core]
-	sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+# Windows-Only
+#[core]
+	#sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [init]
 	defaultBranch = main
