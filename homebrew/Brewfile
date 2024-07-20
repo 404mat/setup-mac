@@ -21,6 +21,7 @@ cask 'suspicious-package'
 
 # dev tools
 brew 'zsh-completions'
+brew 'watchman'
 
 cask 'iterm2'
 cask 'visual-studio-code'
