@@ -1,3 +1,13 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+# if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# fi
+
+# sourcung oh-my-zsh config (if you move ohmyszh config to an exterman file)
+# source $HOME/.ohmyzsh-config-custom
+
 # Expand the history size
 export HISTFILESIZE=10000
 export HISTSIZE=500
@@ -17,6 +27,7 @@ alias cls='clear' # Clear screen
 
 # Change directory aliases
 alias home='cd ~'
+alias dev='cd $HOME/dev'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -68,3 +79,11 @@ function whatsmyip ()
 	echo -n "External IP: " ; wget http://smart-ip.net/myip -O - -q
 }
 
+
+# NVM config
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

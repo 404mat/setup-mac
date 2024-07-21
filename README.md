@@ -70,12 +70,12 @@ Install [iTerm2](https://iterm2.com/) (using Homebrew is recommanded, this progr
 	 - General > *reuse previous session's directory*
 	 - Text > Font > *Anonymous Pro* (must be installed, they are installed via Homebrew, or alternatively see [the install script](fonts/install_fonts.sh))
 
-Then install this color scheme. (TODO : link to file)
+You can use the associated [iTerm profile](terminal/iterm_profile.json) and go from there.
 
 Setup your GitHub SSH Key on your profile, you can follow this tutorial : [Generating a new SSH key and adding it to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac).  
 This facilitates git commands to GitHub.
 
-Install [oh-my-zsh](https://ohmyz.sh/). Use the config (TODO : link to config) script to install the settings with all other dotfiles, or copy the contents of the .zshrc and other config files to you own config.
+Install [oh-my-zsh](https://ohmyz.sh/). Use [the config](terminal/.ohmyzsh-config-custom) and import it to your home folder like the other dotfiles, and source it in your *.zshrc*.
 
 Install [nvm](https://github.com/nvm-sh/nvm). Accept the prompt asking you to take over your Node config. If you used my Homebrew config, you already have Node installed.  
 In some case, maybe *nvm* will not be able to find your Node folder with your executables. You can adjust the *$NODE_PATH* environment variable to fix this.
