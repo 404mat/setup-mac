@@ -28,7 +28,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # Remove a directory and all files
-alias rmd='/bin/rm  --recursive --force --verbose '
+alias rmd='rm -rfv'
 
 # Show open ports
 alias openports='netstat -nape --inet'
