@@ -8,3 +8,5 @@
 	#sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
