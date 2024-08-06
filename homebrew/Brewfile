@@ -23,6 +23,7 @@ cask 'suspicious-package'
 brew 'zsh-completions'
 brew 'watchman'
 brew 'gh'
+brew 'gitui'
 brew 'vsce'
 
 cask 'iterm2'
