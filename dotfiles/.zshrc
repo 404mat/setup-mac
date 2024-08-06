@@ -42,6 +42,8 @@ alias gpsh='git push'
 alias gpl='git pull'
 alias gss='git status -s'
 alias gs='echo ""; echo "*******"; echo -e "   PULL BEFORE COMMITTING"; echo "*******"; echo ""; git status'
+# requires the 'gitui' utility to be installed
+alias gui='gitui'
 
 # ----------------------
 # Functions
