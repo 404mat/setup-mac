@@ -1,6 +1,5 @@
 # utils
 brew 'git'
-brew 'thefuck'
 brew 'mackup'
 brew 'mailsy'
 brew 'imagemagick'
@@ -29,6 +28,7 @@ brew 'vsce'
 cask 'iterm2'
 cask 'visual-studio-code'
 cask 'docker'
+cask 'orbstack'
 cask 'postman'
 
 # environments
