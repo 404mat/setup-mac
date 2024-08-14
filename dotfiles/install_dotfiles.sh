@@ -23,7 +23,7 @@ echo 'if [ -f $HOME/.zshrc ]; then
 fi' >> $HOME/.zprofile
 
 # Copying dotfiles
-DOTFILES=(.bashrc .gitconfig .gitignore .zshrc)
+DOTFILES=(.bashrc .gitconfig .gitignore .zshrc .hushlogin)
 
 for dotfile in $(echo ${DOTFILES[*]});
 do
