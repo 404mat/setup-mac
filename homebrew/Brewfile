@@ -24,6 +24,7 @@ brew 'watchman'
 brew 'gh'
 brew 'gitui'
 brew 'vsce'
+brew 'pnpm'
 
 cask 'iterm2'
 cask 'visual-studio-code'
