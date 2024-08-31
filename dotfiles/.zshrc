@@ -1,3 +1,5 @@
+# zmodload zsh/zprof # uncomment this and last file command to profile startup time
+
 # sourcung oh-my-zsh config (if you move ohmyszh config to an exterman file)
 # source $HOME/.ohmyzsh-config-custom
 
@@ -6,7 +8,6 @@ export HISTFILESIZE=10000
 export HISTSIZE=500
 # Don't put duplicate lines in the history
 export HISTCONTROL=erasedups:ignoredups
-PROMPT_COMMAND='history -a'
 
 # ----------------------
 # Aliases
@@ -29,9 +30,6 @@ alias .....='cd ../../../..'
 
 # Remove a directory and all files
 alias rmd='rm -rfv'
-
-# Show open ports
-alias openports='netstat -nape --inet'
 
 # ----------------------
 # Git Aliases
@@ -60,25 +58,10 @@ pwdtail ()
 	pwd|awk -F/ '{nlast = NF -1;print $nlast"/"$NF}'
 }
 
-# IP address lookup
-alias whatismyip="whatsmyip"
-function whatsmyip ()
-{
-	# Dumps a list of all IP addresses for every device
-	# /sbin/ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' |awk -F: '{ print $1 ": " $3 }';
-
-	# Internal IP Lookup
-	echo -n "Internal IP: " ; /sbin/ifconfig eth0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'
-
-	# External IP Lookup
-	echo -n "External IP: " ; wget http://smart-ip.net/myip -O - -q
-}
-
-
-# NVM config
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# fnm : Fast Node Manager (activate this after installing FNM)
+# eval "$(fnm env --use-on-cd --shell zsh)"
+
+# zprof # uncomment to profile startup time
