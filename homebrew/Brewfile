@@ -1,14 +1,15 @@
 # utils
 brew 'git'
-brew 'mackup'
-brew 'mailsy'
-brew 'imagemagick'
-brew 'fastfetch'
+brew 'mackup' # backup manager
+brew 'mailsy' # temporary mail CLI
+brew 'imagemagick' # image processing
+brew 'fastfetch' # system info
 brew 'tree'
-brew 'mas'
+brew 'mas' # mac app store CLI
 brew 'ffmpeg'
-brew 'asitop'
+brew 'asitop' # cpu usage monitor
 
+# macos quicklook utils
 cask 'qlcolorcode'
 cask 'qlstephen'
 cask 'qlmarkdown'
@@ -21,24 +22,25 @@ cask 'suspicious-package'
 # dev tools
 brew 'zsh-completions'
 brew 'watchman'
-brew 'gh'
-brew 'gitui'
-brew 'vsce'
+brew 'gh' # github CLI
+brew 'gitui' # git GUI
+brew 'vsce' # vscode extension manager
 brew 'pnpm'
 
+# terminal utilities
 cask 'iterm2'
+cask 'ghostty'
+
+# dev apps
 cask 'visual-studio-code'
 cask 'docker'
-cask 'orbstack'
+cask 'orbstack' # docker gui
 cask 'postman'
 
 # environments
 brew 'pyenv'
 brew 'openjdk'
 brew 'node'
-
-# databases
-cask 'mongodb-compass'
 
 # browsers
 cask 'google-chrome'
@@ -50,18 +52,16 @@ cask 'figma'
 # apps
 cask 'raycast'
 cask 'middleclick'
-cask 'iina'
-cask 'keka'
+cask 'iina' # video player
+cask 'keka' # archive manager
 cask 'appcleaner'
-cask 'superduper'
+cask 'superduper' # backup utility
 cask 'qbittorrent@lt20'
-cask 'linearmouse'
-cask 'hiddenbar'
-cask 'stats'
-cask 'itsycal'
+cask 'linearmouse' # linear mouse movement
+cask 'hiddenbar' # menubar cleaner
+cask 'stats' # menubar computer statistics
 cask 'spotify'
 cask 'bitwarden'
 cask 'notion'
-cask 'iconchamp'
 cask 'google-drive'
-cask 'cyberduck'
+cask 'cyberduck' # ftp transfers
