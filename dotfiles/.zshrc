@@ -28,6 +28,9 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
+# Programs
+alias c='code'
+
 # Remove a directory and all files
 alias rmd='rm -rfv'
 
