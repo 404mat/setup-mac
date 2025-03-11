@@ -16,7 +16,7 @@ export HISTCONTROL=erasedups:ignoredups
 # EG: the ls command is aliased, but to use the normal ls command you would type \ls
 alias l="ls -lh" # List files in current directory
 alias ll="ls -al" # List all files in current directory in long list format
-alias o="open ." # Open the current directory in Finder/Explorer
+alias o="open ." # Open the current directory in Finder
 alias cls='clear' # Clear screen
 
 # Change directory aliases
@@ -29,7 +29,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # Programs
-alias c='code'
+alias c="open $1 -a \"Visual Studio Code\""
 
 # Remove a directory and all files
 alias rmd='rm -rfv'
