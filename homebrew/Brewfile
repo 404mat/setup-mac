@@ -28,7 +28,6 @@ brew 'vsce' # vscode extension manager
 brew 'pnpm'
 
 # terminal utilities
-cask 'iterm2'
 cask 'ghostty'
 
 # dev apps
@@ -44,7 +43,7 @@ brew 'node'
 
 # browsers
 cask 'google-chrome'
-cask 'arc'
+cask 'zen-browser'
 
 # design
 cask 'figma'
