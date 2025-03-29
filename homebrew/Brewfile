@@ -20,7 +20,6 @@ cask 'webpquicklook'
 cask 'suspicious-package'
 
 # dev tools
-brew 'zsh-completions'
 brew 'watchman'
 brew 'gh' # github CLI
 brew 'gitui' # git GUI
@@ -28,23 +27,23 @@ brew 'vsce' # vscode extension manager
 brew 'pnpm'
 
 # terminal utilities
-cask 'iterm2'
 cask 'ghostty'
+brew 'zsh-completions'
+brew 'bitwarden-cli'
 
 # dev apps
 cask 'visual-studio-code'
 cask 'docker'
-cask 'orbstack' # docker gui
-cask 'postman'
+cask 'yaak'
 
 # environments
-brew 'pyenv'
+brew 'uv'
 brew 'openjdk'
 brew 'node'
 
 # browsers
 cask 'google-chrome'
-cask 'arc'
+cask 'zen-browser'
 
 # design
 cask 'figma'
@@ -58,7 +57,6 @@ cask 'appcleaner'
 cask 'superduper' # backup utility
 cask 'qbittorrent@lt20'
 cask 'linearmouse' # linear mouse movement
-cask 'hiddenbar' # menubar cleaner
 cask 'stats' # menubar computer statistics
 cask 'spotify'
 cask 'bitwarden'
