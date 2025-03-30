@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env zsh
 
 # If dir does not exist, create it
 if [ ! -d ~/Pictures/Screenshots ]; then

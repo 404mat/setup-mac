@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /usr/bin/env zsh
 
 # Define the temporary directory and log file path
 TEMP_DIR="/tmp/autosetup_$$" # Add PID for uniqueness in case of parallel runs
