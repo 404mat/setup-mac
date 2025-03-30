@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 # Sourcing zshrc in zprofile (create if it does not exists)
 if [ ! -f $HOME/.zprofile ]; then

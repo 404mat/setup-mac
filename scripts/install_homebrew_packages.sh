@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /usr/bin/env bash
 
 # Install Homebrew formulae and casks listed in Brewfile
 

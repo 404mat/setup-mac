@@ -1,4 +1,5 @@
-#!/bin/bash
+#! /usr/bin/env bash
+
 # Homebrew must be installed and configured !!!
 
 # Code

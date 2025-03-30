@@ -1,3 +1,5 @@
+#! /usr/bin/env bash
+
 # If dir does not exist, create it
 if [ ! -d ~/Pictures/Screenshots ]; then
     echo "Screenshots directory does not exist, creating ..."
