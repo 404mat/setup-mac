@@ -8,11 +8,11 @@ LOG_FILE="$TEMP_DIR/log.txt"
 # Format: "Name|URL"
 # IMPORTANT: Replace these with your actual script names and URLs
 scripts=(
-    "Download Script|https://example.com/download.sh"
-    "Setup Script|https://example.com/setup.sh"
-    "Finishing Script|https://example.com/finish.sh"
+    "Dock/Finder config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/configure_dock_finder.sh"
+    "Dotfiles config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_dotfiles.sh"
+    "Fonts installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_fonts.sh"
+    "Homebrew packages installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_homebrew_packages.sh"
     "Invalid URL Script|https://invalid-url-example.com/nonexistent.sh" # Example of a failing download
-    "Failing Execution Script|https://gist.githubusercontent.com/user/repo/raw/commit/failing_script.sh" # Example of a script that runs but exits with error
 )
 # Array to keep track of failed steps
 failed_steps=()
