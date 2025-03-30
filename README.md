@@ -5,7 +5,7 @@ This is the way I setup all Mac computers when I do a fresh install.
 Just execute this command in your terminal :
 
 ```console
-curl -fsSL https://example.com/script.sh | bash
+curl -fsSL https://example.com/autosetup.sh | zsh
 ```
 
 ## Manual steps
