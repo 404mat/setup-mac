@@ -40,6 +40,7 @@ cask 'yaak'
 brew 'uv'
 brew 'openjdk'
 brew 'node'
+brew 'fnm'
 
 # browsers
 cask 'google-chrome'
@@ -47,19 +48,25 @@ cask 'zen-browser'
 
 # design
 cask 'figma'
+cask 'ogdesign-eagle'
 
 # apps
 cask 'raycast'
-cask 'middleclick'
 cask 'iina' # video player
 cask 'keka' # archive manager
-cask 'appcleaner'
 cask 'superduper' # backup utility
 cask 'qbittorrent@lt20'
-cask 'linearmouse' # linear mouse movement
-cask 'stats' # menubar computer statistics
 cask 'spotify'
+cask 'discord'
 cask 'bitwarden'
 cask 'notion'
-cask 'google-drive'
 cask 'cyberduck' # ftp transfers
+
+# utilities apps
+cask 'linearmouse' # linear mouse movement
+cask 'middleclick'
+cask 'tabtab'
+cask 'google-drive'
+cask 'stats' # menubar computer statistics
+cask 'appcleaner'
+cask 'batfi'
