@@ -77,9 +77,10 @@ function rmd()
 		return 1
 	fi
 
-	read -p "Are you sure you want to delete all of '$path' ? (y/n): " confirm
+	printf "Are you sure you want to delete all of '$path' ? (y/n): "
+	read confirm
 	if [[ $confirm == [yY] ]]; then
-		/bin/rm --recursive --force --verbose "$path"
+		/bin/rm -rfv "$path"
 		echo "'$path' has been deleted"
 	else
 		echo "Operation cancelled"
