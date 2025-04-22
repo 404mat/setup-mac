@@ -23,12 +23,17 @@ defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool "false"
 defaults write com.apple.finder "CreateDesktop" -bool "false"
 
 # Cannot do from UI
+defaults write com.apple.desktopservices DSDontWriteNetworkStores true # remove DS_Store files from network drives
+defaults write com.apple.dock "mru-spaces" -bool "false"
+defaults write com.apple.dock "showhidden" -bool "true" # Visually distinguish which apps are hidden via Cmd+H.
+defaults write com.apple.dock "magnification" -bool "false" # Disable magnification in dock hover
 defaults write com.apple.dock autohide-time-modifier -float "0.15"
 defaults write com.apple.dock "autohide-delay" -float "0"
 defaults write com.apple.dock "scroll-to-open" -bool "true"
 defaults write com.apple.finder "AppleShowAllFiles" -bool "true"
 defaults write com.apple.finder "ShowPathbar" -bool "true"
 defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
+defaults write com.apple.finder "FXEnableExtensionChangeWarning" -bool false
 defaults write com.apple.screencapture "location" -string "~/Pictures/screenshots" # default screenshots folder
 defaults write com.apple.iphonesimulator "ScreenShotSaveLocation" -string "~/Pictures/Simulator Screenshots" # default simulator screenshots folder
 defaults write com.apple.AppleMultitouchTrackpad "TrackpadThreeFingerDrag" -bool "true"
