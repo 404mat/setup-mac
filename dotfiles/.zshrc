@@ -39,7 +39,7 @@ alias gcm='git commit -m'
 alias gpsh='git push'
 alias gpl='git pull'
 alias gss='git status -s'
-alias gs='echo ""; echo "*******"; echo -e "   PULL BEFORE COMMITTING"; echo "*******"; echo ""; git status'
+alias gs='git status --short'
 # requires the 'gitui' utility to be installed
 alias gui='gitui'
 

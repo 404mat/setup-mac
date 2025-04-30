@@ -3,10 +3,15 @@
 	name = Mathias D
 [credential]
 	helper = manager
-# Windows-Only
-#[core]
+[core]
+	preloadIndex = true
+	# Windows-Only
 	#sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+	default = current
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
