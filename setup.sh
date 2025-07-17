@@ -9,6 +9,7 @@ LOG_FILE="$TEMP_DIR/log.txt"
 scripts=(
     "Dock/Finder config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/configure_dock_finder.sh"
     "Dotfiles config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_dotfiles.sh"
+    "Config files installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_config_files.sh"
     "Fonts installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_fonts.sh"
     "Homebrew packages installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_apps.sh"
     # "Invalid URL Script|https://invalid-url-example.com/nonexistent.sh" # Example of a failing download

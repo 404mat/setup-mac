@@ -1,0 +1,18 @@
+theme = Mathias
+
+# disable font ligatures
+font-feature = -calt
+
+# window
+macos-titlebar-style = tabs
+background-opacity = 0.97
+window-colorspace = display-p3
+window-padding-x = 10
+window-height = 45
+window-width = 110
+
+mouse-hide-while-typing = true
+cursor-click-to-move = true
+
+# keybinds
+keybind = global:cmd+grave_accent=toggle_quick_terminal
