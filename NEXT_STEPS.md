@@ -18,3 +18,13 @@ You will nedd to complete these steps manually :
   - _Mediamate_ (or open source equivalent)
   - _Swish_
 - Install these fonts : _Berkeley Mono_
+
+### After installing Bartender
+
+The menu bar should look like this :
+
+![Menubar Order](./images/menubar-order.png)
+
+### Miscellaneous
+
+- Wallpaper is from Resend Raycast extension
