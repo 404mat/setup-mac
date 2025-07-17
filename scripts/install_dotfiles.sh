@@ -1,25 +1,49 @@
 #! /usr/bin/env zsh
 
-# Copying dotfiles
-DOTFILES=(.zshrc .zprofile .gitconfig .gitignore .hushlogin)
+echo "Starting installation of dotfiles..."
 
-for dotfile in "${DOTFILES[@]}";
-do
-    echo "Processing $dotfile ..."
-    TARGET_FILE="$HOME/$dotfile"
-    SOURCE_URL="https://raw.githubusercontent.com/404mat/setup-mac/HEAD/dotfiles/$dotfile"
+# Define the destination directory on the local machine
+DEST_DIR="$HOME"
 
-    # Download the file using curl, overwriting if it exists
-    echo "Downloading $dotfile from GitHub to $TARGET_FILE..."
-    if curl -fsSL "$SOURCE_URL" -o "$TARGET_FILE"; then
-        echo "$dotfile downloaded successfully."
-    else
-        echo "Error downloading $dotfile from $SOURCE_URL."
-        # Remove the potentially empty file created by -o on error
-        rm -f "$TARGET_FILE"
-    fi
-    echo ""
-done
+# Define the URL for the repository tarball
+REPO_URL="https://github.com/404mat/setup-mac/archive/refs/heads/main.tar.gz"
 
-echo ""
-echo "All dotfiles have been initialized."
+# Create a temporary directory for the download and extraction
+DOWNLOAD_TEMP_DIR=$(mktemp -d)
+if [ -z "$DOWNLOAD_TEMP_DIR" ]; then
+    echo "Error: Failed to create temporary directory." >&2
+    exit 1
+fi
+
+# --- Download and Extract ---
+echo "Downloading and extracting dotfiles from the repository..."
+# Download the tarball and pipe it directly to tar for extraction
+if curl -fsSL "$REPO_URL" | tar -xz -C "$DOWNLOAD_TEMP_DIR" --strip-components=1 "setup-mac-main/dotfiles"; then
+    echo "Extraction successful."
+else
+    echo "Error: Failed to download or extract dotfiles." >&2
+    rm -rf "$DOWNLOAD_TEMP_DIR"
+    exit 1
+fi
+
+# --- Copy to Destination ---
+# The extracted files are now in DOWNLOAD_TEMP_DIR.
+SOURCE_DIR="$DOWNLOAD_TEMP_DIR"
+
+# Copy the contents of the extracted directory to the destination
+# Using rsync to copy dotfiles (files starting with a dot)
+echo "Copying dotfiles to '$DEST_DIR'..."
+if rsync -av "$SOURCE_DIR"/.* "$DEST_DIR"/; then
+    echo "Dotfiles copied successfully."
+else
+    echo "Error: Failed to copy dotfiles." >&2
+    rm -rf "$DOWNLOAD_TEMP_DIR"
+    exit 1
+fi
+
+# --- Cleanup ---
+echo "Cleaning up temporary directory..."
+rm -rf "$DOWNLOAD_TEMP_DIR"
+
+echo "Installation of dotfiles completed."
+exit 0
