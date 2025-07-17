@@ -144,5 +144,7 @@ echo "The temporary directory used was: $TEMP_DIR" >> "$LOG_FILE"
 echo "You can manually delete this directory if needed." >> "$LOG_FILE"
 echo "========================================" >> "$LOG_FILE"
 
+# Open next steps link in the browser
+open "https://github.com/404mat/setup-mac/blob/main/NEXT_STEPS.md"
 
 exit $overall_exit_code
