@@ -21,6 +21,7 @@ brew install gh
 brew install gitui
 brew install vsce
 brew install pnpm
+brew install ollama
 
 # terminal utilities
 brew install zsh-completions
@@ -44,17 +45,17 @@ brew install --cask quicklook-csv
 brew install --cask webpquicklook
 brew install --cask suspicious-package
 
-# terminal utilities
-brew install --cask ghostty
-
 # dev apps
 brew install --cask visual-studio-code
 brew install --cask docker
 brew install --cask yaak
+brew install --cask ghostty
+brew install --cask ollama-app
 
 # browsers
 brew install --cask google-chrome
-brew install --cask zen-browser
+brew install --cask thebrowsercompany-dia
+brew install --cask zen
 
 # design
 brew install --cask figma
@@ -62,15 +63,23 @@ brew install --cask ogdesign-eagle
 
 # apps
 brew install --cask raycast
-brew install --cask iina
 brew install --cask keka
 brew install --cask superduper
 brew install --cask qbittorrent@lt20
-brew install --cask spotify
-brew install --cask discord
 brew install --cask bitwarden
 brew install --cask notion
+brew install --cask notion-calendar
+brew install --cask notion-mail
 brew install --cask cyberduck
+brew install --cask anydesk
+brew install --cask linear-linear
+
+# entertainment
+brew install --cask plex
+brew install --cask iina
+brew install --cask spotify
+brew install --cask discord
+brew install --cask stremio
 
 # utilities apps
 brew install --cask linearmouse
@@ -80,5 +89,6 @@ brew install --cask google-drive
 brew install --cask stats
 brew install --cask appcleaner
 brew install --cask batfi
+brew install --cask altserver
 
 echo "Brewfile installation complete."

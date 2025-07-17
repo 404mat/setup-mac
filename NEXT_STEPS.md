@@ -4,5 +4,17 @@ Your Mac is now hopefully setup. It some steps failed, execute them manually to 
 
 You will nedd to complete these steps manually :
 
-[ ] Enter licence key for these apps : Eagle, TabTab,
-[ ] Set the default browser
+- Set the default browser
+- Enter licence key for these apps : _Eagle_, _TabTab_,
+- Install these apps:
+  - _Bartender 5_
+  - _CleanShot X_
+  - _Affinity Designer_
+  - _Affinity Photo_
+  - _Dropzone 4_
+  - _Framous_
+  - _Hazel_
+  - _Little Snitch_
+  - _Mediamate_ (or open source equivalent)
+  - _Swish_
+- Install these fonts : _Berkeley Mono_
