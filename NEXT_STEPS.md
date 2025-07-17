@@ -5,7 +5,7 @@ Your Mac is now hopefully setup. It some steps failed, execute them manually to 
 You will nedd to complete these steps manually :
 
 - Set the default browser
-- Enter licence key for these apps : _Eagle_, _TabTab_,
+- Enter licence key for these apps : _Eagle_, _TabTab_
 - Install these apps:
   - _Bartender 5_
   - _CleanShot X_
@@ -18,6 +18,7 @@ You will nedd to complete these steps manually :
   - _Mediamate_ (or open source equivalent)
   - _Swish_
 - Install these fonts : _Berkeley Mono_
+- Create GitHub SSH key
 
 ### After installing Bartender
 
