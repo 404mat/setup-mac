@@ -6,12 +6,11 @@ LOG_FILE="$TEMP_DIR/log.txt"
 
 # Define the list of scripts to download and execute
 # Format: "Name|URL"
-# IMPORTANT: Replace these with your actual script names and URLs
 scripts=(
     "Dock/Finder config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/configure_dock_finder.sh"
     "Dotfiles config|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_dotfiles.sh"
     "Fonts installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_fonts.sh"
-    "Homebrew packages installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_homebrew_packages.sh"
+    "Homebrew packages installation|https://raw.githubusercontent.com/404mat/setup-mac/HEAD/scripts/install_apps.sh"
     # "Invalid URL Script|https://invalid-url-example.com/nonexistent.sh" # Example of a failing download
 )
 # Array to keep track of failed steps
@@ -55,7 +54,9 @@ else
         fi
         # Verify brew command is now available
         if ! command -v brew &>/dev/null; then
-             echo "Warning: brew command still not found after installation attempt. Subsequent steps might fail." >&2
+             echo "Error: brew command not found after installation." >&2
+             echo "Please add Homebrew to your ~/.zprofile and relaunch the script." >&2
+             exit 1
         fi
     else
         echo "Error: Exiting due to Homebrew installation failure." >&2
@@ -75,7 +76,7 @@ for item in "${scripts[@]}"; do
     echo "----------------------------------------"
 
     # Define the path for the downloaded script within the temp directory
-    temp_script="$TEMP_DIR/${name// /_}.sh" # Use descriptive name based on step
+    temp_script="$TEMP_DIR/${name// /_}.sh"
 
     echo "Downloading script..."
     # Download the script using curl
@@ -84,8 +85,8 @@ for item in "${scripts[@]}"; do
         # Make the downloaded script executable
         chmod +x "$temp_script"
 
-        echo "Executing the script ($name)..."
         # Execute the script
+        echo "Executing the $name script..."
         "$temp_script"
         script_exit_code=$? # Capture the exit code of the executed script
 
@@ -106,7 +107,7 @@ for item in "${scripts[@]}"; do
         failed_steps+=("$name (Download Failed)")
         overall_exit_code=1 # Mark overall failure
     fi
-    echo "" # Add a newline for better readability between steps
+    echo "" # Add a newline
 done
 
 # --- Final Summary ---

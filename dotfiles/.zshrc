@@ -9,6 +9,15 @@ export HISTSIZE=500
 # Don't put duplicate lines in the history
 export HISTCONTROL=erasedups:ignoredups
 
+# MacOS Java config for android development
+# Ensure you have the correct Java version installed
+# Java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/openjdk.jdk/Contents/Home
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # ----------------------
 # Aliases
 # ----------------------
@@ -29,7 +38,7 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 
 # Programs
-alias c="open $1 -a \"Visual Studio Code\""
+alias c="code"
 
 # ----------------------
 # Git Aliases and functions
@@ -38,7 +47,6 @@ alias gaa='git add .'
 alias gcm='git commit -m'
 alias gpsh='git push'
 alias gpl='git pull'
-alias gss='git status -s'
 alias gs='git status --short'
 # requires the 'gitui' utility to be installed
 alias gui='gitui'
