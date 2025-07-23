@@ -7,7 +7,6 @@ You will nedd to complete these steps manually :
 - Set the default browser
 - Enter licence key for these apps : _Eagle_, _TabTab_
 - Install these apps:
-  - _Bartender 5_
   - _CleanShot X_
   - _Affinity Designer_
   - _Affinity Photo_
@@ -19,7 +18,7 @@ You will nedd to complete these steps manually :
   - _Swish_
 - Install these fonts : _Berkeley Mono_
 
-### After installing Bartender
+### Menu bar
 
 The menu bar should look like this :
 

@@ -90,5 +90,6 @@ brew install --cask stats
 brew install --cask appcleaner
 brew install --cask batfi
 brew install --cask altserver
+brew install --cask jordanbaird-ice
 
 echo "Brewfile installation complete."
