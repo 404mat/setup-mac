@@ -1,8 +1,5 @@
 # zmodload zsh/zprof # uncomment this and last file command to profile startup time
 
-# sourcung oh-my-zsh config (if you move ohmyszh config to an exterman file)
-# source $HOME/.ohmyzsh-config-custom
-
 # Expand the history size
 export HISTFILESIZE=10000
 export HISTSIZE=500
@@ -23,12 +20,14 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # ----------------------
 # To temporarily bypass an alias, we preceed the command with a \
 # EG: the ls command is aliased, but to use the normal ls command you would type \ls
+
+# directory inspection
 alias l="ls -lh" # List files in current directory
 alias ll="ls -al" # List all files in current directory in long list format
 alias o="open ." # Open the current directory in Finder
 alias cls='clear'
 
-# Change directory aliases
+# Change directory
 alias home='cd ~'
 alias dev='cd $HOME/dev'
 alias cd..='cd ..'
@@ -40,6 +39,9 @@ alias .....='cd ../../../..'
 # Programs
 alias c="code"
 
+# Utilities
+alias brew-up='brew update --verbose; brew upgrade; brew cleanup -s --verbose; brew doctor --verbose; trash `brew --cache`;'
+
 # ----------------------
 # Git Aliases and functions
 # ----------------------
@@ -48,7 +50,7 @@ alias gcm='git commit -m'
 alias gpsh='git push'
 alias gpl='git pull'
 alias gs='git status --short'
-# requires the 'gitui' utility to be installed
+# requires the 'gitui' program to be installed
 alias gui='gitui'
 
 # Delete all branches that do not have a remote
@@ -94,8 +96,5 @@ function rmd()
 		echo "Operation cancelled"
 	fi
 }
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # zprof # uncomment to profile startup time
