@@ -25,6 +25,8 @@ brew install ollama
 
 # terminal utilities
 brew install zsh-completions
+brew install zsh-syntax-highlighting
+brew install zsh-autosuggestions
 brew install bitwarden-cli
 
 # environments
@@ -54,8 +56,8 @@ brew install --cask ollama-app
 
 # browsers
 brew install --cask google-chrome
-brew install --cask thebrowsercompany-dia
 brew install --cask zen
+brew install --cask chatgpt-atlas
 
 # design
 brew install --cask figma
@@ -65,7 +67,6 @@ brew install --cask ogdesign-eagle
 brew install --cask raycast
 brew install --cask keka
 brew install --cask superduper
-brew install --cask qbittorrent@lt20
 brew install --cask bitwarden
 brew install --cask notion
 brew install --cask notion-calendar
@@ -86,8 +87,6 @@ brew install --cask linearmouse
 brew install --cask middleclick
 brew install --cask tabtab
 brew install --cask google-drive
-brew install --cask stats
-brew install --cask appcleaner
 brew install --cask batfi
 brew install --cask altserver
 brew install --cask jordanbaird-ice
