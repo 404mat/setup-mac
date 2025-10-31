@@ -35,13 +35,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-
 # Programs
 alias c="code"
-
 # Utilities
 alias brew-up='brew update --verbose; brew upgrade; brew cleanup -s --verbose; brew doctor --verbose; trash `brew --cache`;'
-
 # ----------------------
 # Git Aliases and functions
 # ----------------------
@@ -52,7 +49,6 @@ alias gpl='git pull'
 alias gs='git status --short'
 # requires the 'gitui' program to be installed
 alias gui='gitui'
-
 # Delete all branches that do not have a remote
 function gdelete() {
 	local branches=$(git branch --vv | grep ": gone" | awk '{print $1}')
@@ -96,5 +92,12 @@ function rmd()
 		echo "Operation cancelled"
 	fi
 }
+
+## Add PNPM here
+
+## Add BUN here
+
+## Install starship before sourcing config
+eval "$(starship init zsh)"
 
 # zprof # uncomment to profile startup time

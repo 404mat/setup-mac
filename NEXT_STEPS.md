@@ -6,6 +6,7 @@ You will nedd to complete these steps manually :
 
 - Set the default browser
 - Enter licence key for these apps : _Eagle_, _TabTab_
+- Install [Starship](https://starship.rs/) to customize the shell prompt (use the [config file](./config-files/starship/starship.toml))
 - Install these apps:
   - _CleanShot X_
   - _Affinity Designer_

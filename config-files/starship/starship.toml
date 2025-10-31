@@ -1,0 +1,49 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+# Right prompt: shows time at command start
+right_format = "$status $cmd_duration $time"
+
+### Right Prompt Modules ###
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+style = 'bold 35'
+
+# === Time Modules ===
+[time]
+disabled = false
+format = "[$time]($style)"
+time_format = "%H:%M:%S"
+style = "bold dimmed 241"
+
+[cmd_duration]
+disabled = false
+min_time = 2_000 # Show only if command takes 2 seconds or more
+format = "[took]($style) [$duration]($style) —"
+style = "bold 244"
+
+### Left Prompt Modules ###
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold 249)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[➜](bold 124)'     # The 'error_symbol' segment is being set to '➜' with the color 'bold red'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[git_branch]
+format = '[—]($style) [$branch]($style) '
+style = 'bold 22'
+
+[status]
+disabled = false
+format = '[$symbol]($style)  [$status](bold 52) '
+symbol = "●"
